@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OwlCarousel2 / Prototype clash test</title>
+        <meta name="description" content="OwlCarousel2 / Prototype clash test">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        
+        <script src="js/vendor/modernizr-2.8.0.min.js"></script>
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/prototype.min.js"></script>
+        <script src="js/vendor/owl.carousel.min.js"></script>
+        <script>jQuery.noConflict();</script>
+    </head>
+    <body>
+        <div class="owl-carousel">
+            <div><img src="img/Product_1.jpg" alt=""></div>
+            <div><img src="img/Product_2.jpg" alt=""></div>
+            <div><img src="img/Product_3.jpg" alt=""></div>
+            <div><img src="img/Product_4.jpg" alt=""></div>
+            <div><img src="img/Product_1.jpg" alt=""></div>
+            <div><img src="img/Product_2.jpg" alt=""></div>
+        </div>
+        <script>
+        jQuery(document).ready(function($) {
+            $('.owl-carousel').owlCarousel();
+        });
+        </script>
+    </body>
+</html>
